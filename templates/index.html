@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de datos mineros</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="Titulo">
+    <h1>Analisis Minero<h1>
+    <h4>Mineras a seleccion para analisi de produccion</h4>
+</div>
+
+
+
+<div class="Contenedor">
+    <div class="list-container">
+        <ol start=0>
+            <li>Codelco-Chile Total</li>
+            <li>División Chuquicamata</li>
+            <li>División Radomiro Tomic</li>
+            <li>División Ministro Hales</li>
+            <li>División Salvador</li>
+            <li>División Andina</li>
+            <li>División El Teniente</li>
+            <li>Gaby</li>
+            <li>OTROS PRODUCTORES / Other Producers</li>
+            <li>Mantos Copper (Ex Anglo American Norte)</li>
+            <li>Anglo American Sur</li>
+            <li>Escondida</li>
+        </ol>
+    </div>
+
+    <div class="list-container">
+        <ol start= 12>
+            <li>Compañía Minera El Indio</li>
+            <li>Ojos del Salado</li>
+            <li>Michilla</li>
+            <li>Candelaria</li>
+            <li>Cerro Colorado</li>
+            <li>Quebrada Blanca</li>
+            <li>Zaldívar</li>
+            <li>El Abra</li>
+            <li>Andacollo</li>
+            <li>Collahuasi</li>
+            <li>Lomas Bayas</li>
+            <li>Los Pelambres</li>
+        <ol>
+    </div>
+
+    <div class="list-container">
+        <ol start= 24>
+            <li>Centinela</li>
+            <li>Atacama Kozán</li>
+            <li>Haldeman</li>
+            <li>Spence</li>
+            <li>Grace</li>
+            <li>Franke</li>
+            <li>Tres Valles</li>
+            <li>Centinela</li>
+            <li>Caserones</li>
+            <li>Sierra Gorda</li>
+            <li>Antucoya</li>
+            <li>OTROS/others</li>
+        <ol>
+    </div>
+</div>
+
+<div class="Titulo">
+    <h2>Ingrese Numero de la empresa en concreto</h2>
+</div>
+<div class="Contenedor">
+    <form action="/procesar" method="post">
+        <input type="number" name="numero_usuario">
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+    <!-- Aquí se muestra la imagen generada por  analisisminer.py -->
+<div class="Contenedor">    
+    <img src="data:image/png;base64,{{ img }}" alt="Gráfico generado">
+</div>
+<div class="Titulo">
+    <h1>Gráfico generado</h1>
+    <h1>El promedio es: {{ prom }}</h1>
+</div>
+
+
+
+<div class="Titulo">
+    <h1>Regresion lineal</h1>
+</div>
+
+
+
+
+</body>
+</html>

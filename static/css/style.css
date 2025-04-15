@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:aliceblue(238, 39, 39);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+input[type="number"] {
+    font-size: 16px; /* Tamaño de fuente */
+    padding: 10px; /* Ajusta el relleno para hacer el rectángulo más grande */
+    width: 150px; /* Ancho del rectángulo */
+    height: 40px; /* Altura del rectángulo */
+    border-radius: 8px; /* Ajusta el radio de borde para hacer los bordes más redondeados */
+    border: 1px solid #ccc; /* Añade un borde */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+}
+
+ .Contenedor{
+    display: flex;
+    justify-content: center;
+ }
+
+ .Titulo{
+    text-align: center;
+ }
+
+
+ /* Estilos CSS para la lista ordenada vertical */
+ .list-container {
+    display: block; /* Hace que el div se comporte como un bloque */
+    width: 500px; /* Ancho del div */
+    border: 1px solid #ccc; /* Borde del div */
+    padding: 10px; /* Relleno interior del div */
+    margin-left: 3cm;
+    margin-right: 3cm;
+    
+    
+}
+
+.list-container li {
+    
+    margin-bottom: 5px; /* Espacio entre los elementos de la lista */
+}
+
+button[type="submit"] {
+    font-size: 16px; /* Tamaño de fuente */
+    padding: 10px 20px; /* Ajusta el relleno para hacer el botón más grande */
+}
